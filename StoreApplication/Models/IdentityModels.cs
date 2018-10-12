@@ -29,5 +29,10 @@ namespace StoreApplication.Models
         {
             return new ApplicationDbContext();
         }
+        public System.Data.Entity.DbSet<StoreApplication.Models.Classes.Sale> Sales { get; set; }
+        public System.Data.Entity.DbSet<StoreApplication.Models.Classes.Employee> Employees { get; set; }
+        public System.Data.Entity.DbSet<StoreApplication.Models.Classes.StoreLocation> StoreLocations { get; set; }
+        public System.Data.Entity.DbSet<StoreApplication.Models.Classes.Customer> Customers { get; set; }
+        public System.Data.Entity.DbSet<StoreApplication.Models.Classes.Product> Products { get; set; }
     }
 }

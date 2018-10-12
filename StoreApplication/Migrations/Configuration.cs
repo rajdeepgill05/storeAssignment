@@ -17,7 +17,13 @@ namespace StoreApplication.Migrations
 
         protected override void Seed(StoreApplication.Models.ApplicationDbContext context)
         {
-            
+            context.Sales.Add(new Sale()
+            {
+                Id = 12,
+                EmployeeId = 123,
+                AssignedEmployeeID = 123
+            });
+            context.Customers.Add(new Customer() {Id = 45, Name = "ABC", E});
         }
     }
 }
